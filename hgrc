@@ -1,0 +1,16 @@
+# This is a Mercurial configiration file.
+[ui]
+username = Ambrose Krapacs <akrapacs@gmail.com>
+editor = emacs
+
+[extensions]
+hgext.extdiff =
+color =
+transplant = 
+hgext.fetch =
+hgext.purge =
+progress =
+mq =
+
+[extdiff]
+cmd.fm = opendiff-w
