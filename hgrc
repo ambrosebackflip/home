@@ -1,6 +1,6 @@
 # This is a Mercurial configiration file.
 [ui]
-username = Ambrose Krapacs <akrapacs@gmail.com>
+username = Ambrose Krapacs <ambrose@backflipstudios.com>
 editor = emacs
 
 [extensions]
@@ -11,6 +11,12 @@ hgext.fetch =
 hgext.purge =
 progress =
 mq =
+
+
+[auth]
+bfs.prefix = backflipstudios.kilnhg.com
+bfs.username = ambrose@backflipstudios.com
+bfs.schemes = https
 
 [extdiff]
 cmd.fm = opendiff-w
