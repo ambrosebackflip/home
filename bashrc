@@ -1,6 +1,12 @@
 # Path
 export PATH=~/bin:$PATH
 
+# Android
+export ANDROID_SDK_ROOT=/usr/local/opt/android-sdk
+
+# Perforce
+export P4CONFIG=.p4settings
+
 # Prompt
 export PS1="[\w]$ "
 
