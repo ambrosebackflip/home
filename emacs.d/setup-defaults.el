@@ -33,9 +33,8 @@
 ;; tab settings
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
-(setq c-default-style "k&r")
+(c-set-offset 'substatement-open 0)
 (setq c-basic-offset 4)
-;(setq c-basic-offset 4)
 
 ;; line numbers
 (require 'linum)
