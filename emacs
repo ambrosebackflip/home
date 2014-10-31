@@ -19,7 +19,8 @@
    (cons 'web-mode melpa)
    (cons 'flymake melpa)
    (cons 'csharp-mode melpa)
-   (cons 'go-mode melpa)))
+   (cons 'go-mode melpa)
+   (cons 'yaml-mode melpa)))
 
 (condition-case nil
     (init--install-packages)
@@ -45,6 +46,7 @@
 (require 'setup-rst)
 (require 'setup-csharp)
 (require 'setup-go)
+(require 'setup-yaml)
 
 ;; setup extensions
 (eval-after-load 'lua-mode '(require 'setup-lua))
