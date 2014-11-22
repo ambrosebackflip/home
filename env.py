@@ -3,7 +3,7 @@
 import sys
 import getopt
 import os
-from os.path import join, realpath, dirname, expanduser
+from os.path import join, realpath, dirname, expanduser, exists
 import subprocess
 
 def call(args):
@@ -28,6 +28,10 @@ def main():
     call(["ln", "-fs", join(env_path, "gitconfig"), ".gitconfig"])
     call(["ln", "-fs", join(env_path, "hgrc"), ".hgrc"])
     call(["ln", "-fs", join(env_path, "profile"), ".profile"])
+
+    if not exists(join(".subversion")):
+        os.mkdirs(".subversion")
+    call(["ln", "-fs", join(env_path, "subversion.config"), ".subversion/config"])
     
     os.chdir(cwd)
     
