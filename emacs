@@ -1,5 +1,5 @@
 ;; load path
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/lisp")
 (add-to-list 'load-path "~/.emacs.d/packages/")
 
 ;; setup package
