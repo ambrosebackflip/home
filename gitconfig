@@ -2,6 +2,7 @@
     st = status
     fdclean = clean -f -d
     fm = difftool -d -t opendiff -y
+    ss = difftool -d -t smartsynchronize -y    
 
 [user]
 	name = Ambrose Krapacs
@@ -12,3 +13,6 @@
 
 [credential]
 	helper = osxkeychain
+
+[difftool "smartsynchronize"]
+   cmd = /Applications/SmartSynchronize.app/Contents/MacOS/SmartSynchronize "$LOCAL" "$REMOTE"

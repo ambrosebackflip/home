@@ -18,8 +18,8 @@
    (cons 'json-mode melpa)
    (cons 'web-mode melpa)
    (cons 'flymake melpa)
-   (cons 'csharp-mode melpa)))
-
+   (cons 'csharp-mode melpa)
+   (cons 'go-mode melpa)))
 
 (condition-case nil
     (init--install-packages)
@@ -44,6 +44,7 @@
 (require 'setup-python)
 (require 'setup-rst)
 (require 'setup-csharp)
+(require 'setup-go)
 
 ;; setup extensions
 (eval-after-load 'lua-mode '(require 'setup-lua))
