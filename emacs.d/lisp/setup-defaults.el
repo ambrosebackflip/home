@@ -43,9 +43,9 @@
 
 ;; backups
 (setq backup-by-copying t)
-(setq backup-directory-alist `(("." . "~/.emacs.backups/")))
-(setq auto-save-list-file-prefix "~/.emacs.backups/")
-(setq auto-save-file-name-transforms `((".*" "~/.emacs.backups/" t)))
+(setq backup-directory-alist `(("." . "~/.emacs.d/backups/")))
+(setq auto-save-list-file-prefix "~/.emacs.d/backups/")
+(setq auto-save-file-name-transforms `((".*" "~/.emacs.d/backups/" t)))
 
 ;; navigate to a window backwards
 (defun other-window-backwards ()
