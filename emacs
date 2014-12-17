@@ -1,6 +1,5 @@
 ;; load path
 (add-to-list 'load-path "~/.emacs.d/lisp")
-(add-to-list 'load-path "~/.emacs.d/packages/")
 
 ;; setup package
 (require 'setup-package)
@@ -20,6 +19,9 @@
    (cons 'flymake melpa)
    (cons 'csharp-mode melpa)
    (cons 'go-mode melpa)
+   (cons 'ag melpa)
+   (cons 'flx-ido melpa)
+   (cons 'projectile melpa)
    (cons 'yaml-mode melpa)))
 
 (condition-case nil
@@ -35,11 +37,12 @@
 (eval-after-load 'org '(require 'setup-org))
 (require 'setup-ido)
 (require 'setup-uniquify)
+(require 'setup-flx)
+(require 'setup-projectile)
 (require 'setup-multi-term)
 (require 'setup-ffip)
 (require 'setup-rebuilder)
 (require 'setup-clipboard)
-;;(require 'setup-html)
 (require 'setup-web)
 (require 'setup-xml)
 (require 'setup-python)
