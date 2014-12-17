@@ -1,0 +1,10 @@
+[alias]
+    st = status
+    fdclean = clean -f -d
+
+[user]
+	name = Ambrose Krapacs
+	email = ambrose@backflipstudios.com
+
+[core]
+	editor = emacs
