@@ -41,11 +41,19 @@
 (global-linum-mode t)
 (setq linum-format "%4d\u2502 ")
 
+;; filelocks
+(setq create-lockfiles nil)
+
 ;; backups
-(setq backup-by-copying t)
-(setq backup-directory-alist `(("." . "~/.emacs.d/backups/")))
-(setq auto-save-list-file-prefix "~/.emacs.d/backups/")
-(setq auto-save-file-name-transforms `((".*" "~/.emacs.d/backups/" t)))
+;; (setq backup-by-copying t)
+;; (setq backup-directory-alist `(("." . "~/.emacs.d/backups/")))
+;; (setq auto-save-list-file-prefix "~/.emacs.d/backups/")
+;; (setq auto-save-file-name-transforms `((".*" "~/.emacs.d/backups/" t)))
+(defconst auto-save-folder "~/.emacs.d/auto-save/")
+(setq backup-directory-alist
+      `((".*" . ,auto-save-folder)))
+(setq auto-save-file-name-transforms
+      `((".*" ,auto-save-folder t)))
 
 ;; navigate to a window backwards
 (defun other-window-backwards ()

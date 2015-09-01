@@ -22,7 +22,8 @@
    (cons 'ag melpa)
    (cons 'flx-ido melpa)
    (cons 'projectile melpa)
-   (cons 'yaml-mode melpa)))
+   (cons 'yaml-mode melpa)
+   (cons 'thrift melpa)))
 
 (condition-case nil
     (init--install-packages)
@@ -63,3 +64,5 @@
 (require 'setup-mappings)
 (require 'setup-aliases)
 
+(put 'downcase-region 'disabled nil)
+(put 'upcase-region 'disabled nil)

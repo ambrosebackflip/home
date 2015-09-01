@@ -9,7 +9,7 @@
 	email = ambrose@backflipstudios.com
 
 [core]
-	editor = emacs
+	editor = vim
 
 [credential]
 	helper = osxkeychain
