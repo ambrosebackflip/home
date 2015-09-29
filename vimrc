@@ -39,9 +39,20 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " Ignores
-set wildignore=*.meta
+set wildignore+=*.meta
+set wildignore+=*.class
+set wildignore+=*.pyc
 let NERDTreeIgnore = ['\.meta$']
 
 " Colors
 colorscheme molokai
+
+" Clipboard
+if has("clipboard")
+    if has("macunix")
+        set clipboard=unnamed
+    elseif has("unix")
+        set clipboard=unnamedplus
+    endif
+endif
 
