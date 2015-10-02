@@ -1,6 +1,5 @@
 # Path
 export PATH=~/bin:$PATH
-export GOBIN=~/bin
 
 # boot2docker
 export DOCKER_HOST=tcp://192.168.59.103:2376
