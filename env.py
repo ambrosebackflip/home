@@ -28,9 +28,11 @@ def main():
     call(["ln", "-fs", join(env_path, "gitconfig"), ".gitconfig"])
     call(["ln", "-fs", join(env_path, "hgrc"), ".hgrc"])
     call(["ln", "-fs", join(env_path, "profile"), ".profile"])
+    call(["ln", "-fs", join(env_path, "vim"), ".vim"])
+    call(["ln", "-fs", join(env_path, "vimrc"), ".vimrc"])
 
     if not exists(join(".subversion")):
-        os.mkdirs(".subversion")
+        os.makedirs(".subversion")
     call(["ln", "-fs", join(env_path, "subversion.config"), ".subversion/config"])
     
     os.chdir(cwd)
